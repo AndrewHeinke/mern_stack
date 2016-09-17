@@ -1,12 +1,10 @@
-var express  = require('express');
-var app      = express();
-var port     = process.env.PORT || 3333;
+var express = require('express')
+
+var app = express();
 
 app.use(express.static('static'));
 
-app.get('/', function(req, res) {
-  res.render('/public/index.html');
+var server = app.listen(3000, function() {
+	var port = server.address().port;
+	console.log("Started server at port", port);
 });
-
-app.listen(port);
-console.log('The magic happens on port ' + port);

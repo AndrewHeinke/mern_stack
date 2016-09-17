@@ -1,7 +1,13 @@
-var React = require('react');
-var ReactDOM = require('react-dom');
+var BugList = React.createClass({
+  render: function() {
+    return (
+      <div>The bug list would come here.</div>
+    )
+  }
+});
 
 ReactDOM.render(
-  <h1>Hello World</h1>,
-  document.getElementById('example');
-)
+  <BugList />,
+  document.getElementById('main')
+);
+
