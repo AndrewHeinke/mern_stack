@@ -10,4 +10,3 @@ ReactDOM.render(
   <BugList />,
   document.getElementById('main')
 );
-
