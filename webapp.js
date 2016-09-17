@@ -2,7 +2,7 @@ var express  = require('express');
 var app      = express();
 var port     = process.env.PORT || 3333;
 
-app.use(express.static(process.cwd() + '/public'));
+app.use(express.static('static'));
 
 app.get('/', function(req, res) {
   res.render('/public/index.html');
